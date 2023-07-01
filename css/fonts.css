@@ -1,0 +1,47 @@
+@font-face {
+    src: url("../fonts/Oswald-Medium.woff2") format("woff2"),
+        url("../fonts/Oswald-Medium.ttf") format("ttf");
+    font-family: "Oswald";
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("../fonts/Oswald-Regular.woff2") format("woff2"),
+        url("../fonts/Oswald-Regular.tf") format("ttf");
+    font-family: "Oswald";
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("../fonts/Rubik-Light.woff2") format("woff2"),
+        url("../fonts/Rubik-Light.ttf") format("ttf");
+    font-family: "Rubik";
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
+        url("../fonts/Rubik-Regular.ttf") format("ttf");
+    font-family: "Rubik";
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
+        url("../fonts/Rubik-Medium.ttf") format("ttf");
+    font-family: "Rubik";
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("../fonts/Rubik-Bold.woff2") format("woff2"),
+        url("../fonts/Rubik-Bold.ttf") format("ttf");
+    font-family: "Rubik";
+    font-weight: 700;
+    font-style: normal;
+}

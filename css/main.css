@@ -1,0 +1,124 @@
+/* RESET, NORMALIZE STYLES: */
+@import url('./normalize.css');
+@import url('./reset.css');
+
+/* FONTS LOAD SECTION: */
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap'); */
+@import url('./fonts.css');
+
+/* LAYOUTS STYLES: */
+@import url('./layout/wrapper.css');
+@import url('./layout/header.css');
+@import url('./layout/main.css');
+@import url('./layout/footer.css');
+@import url('./layout/form.css');
+@import url('./layout/modal.css');
+@import url('./layout/dialog.css');
+
+@import url('./layout/container.css');
+
+/* UI STYLES: */
+@import url('./ui/animation.css');
+@import url('./ui/background-colors.css');
+@import url('./ui/round-icon-button.css');
+@import url('./ui/text-icon-button.css');
+@import url('./ui/blue-button.css');
+@import url('./ui/developer.css');
+@import url('./ui/scroll-up-button.css');
+@import url('./ui/titles.css');
+@import url('./ui/visually-hidden.css');
+@import url('./ui/burger-button.css');
+@import url('./ui/radio.css');
+
+/* BEM BLOCKS: */
+	/* header */
+@import url('./bem-blocks/logo.css');
+@import url('./bem-blocks/address.css');
+@import url('./bem-blocks/socials.css');
+@import url('./bem-blocks/phone.css');
+@import url('./bem-blocks/menu.css');
+@import url('./bem-blocks/searchbar.css');
+@import url('./bem-blocks/catalog-dialog.css');
+	/* sections */
+@import url('./bem-blocks/intro.css');
+@import url('./bem-blocks/breadcrumbs.css');
+@import url('./bem-blocks/slide.css');
+	/* catalogs */
+@import url('./bem-blocks/catalogs.css');
+@import url('./bem-blocks/link-catalog.css');
+@import url('./bem-blocks/carousel.css');
+@import url('./bem-blocks/card.css');
+@import url('./bem-blocks/filter.css');
+@import url('./bem-blocks/tag.css');
+	/* presentation */
+@import url('./bem-blocks/presentation.css');
+@import url('./bem-blocks/description.css');
+@import url('./bem-blocks/advantages.css');
+@import url('./bem-blocks/production.css');
+	/* category */
+@import url('./bem-blocks/category.css');
+	/* about */
+@import url('./bem-blocks/about.css');
+@import url('./bem-blocks/stages.css');
+@import url('./bem-blocks/advantege.css');
+	/* certificate */
+@import url('./bem-blocks/certificate.css');
+	/* seo */
+@import url('./bem-blocks/seo.css');
+	/* contacts */
+@import url('./bem-blocks/contacts.css');
+	/* product */
+@import url('./bem-blocks/product.css');
+@import url('./bem-blocks/info-product.css');
+	/* vacancy */
+@import url('./bem-blocks/vacancy.css');
+	/* footer */
+@import url('./bem-blocks/catalog-footer.css');
+@import url('./bem-blocks/menu-footer.css');
+@import url('./bem-blocks/slogan.css');
+@import url('./bem-blocks/policy.css');
+@import url('./bem-blocks/mail.css');
+
+/* COMMONS */
+@import url('./commons.css');
+
+/* USER VARIABLES SECTION: */
+:root {
+	--main-ff: "Rubik";
+	--second-ff: "Oswald";
+	--color-accent: #0060e5;
+	--color-green: #25d366;
+	--color-green-1: #219653;
+	--color-grey: #e3e3e4;
+	--color-grey-1: #555459;
+	--color-grey-2: #747373;
+	--color-text: #555459;
+	--color-text-1: #bfbec7;
+	--color-black:  #0c0d0f;
+	--color-white:  #fff;
+	--color-back:  #e9e9eb;
+	--color-back-1:  #fafafb;
+	--color-red:  #eb5757;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 1.19;
+}
+
+body {
+	position: relative;
+	min-width: 320px;
+	overflow-x: hidden;
+	color: var(--color-text);
+	font-family: var(--main-ff);
+	text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+}

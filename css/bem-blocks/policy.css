@@ -1,0 +1,18 @@
+.policy {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+@media (any-hover: hover) {
+    .policy__link:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width : 768px) {
+    .policy {
+        font-size: 1rem;
+    }
+}

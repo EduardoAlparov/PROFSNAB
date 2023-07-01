@@ -1,0 +1,113 @@
+/* control start */
+.info-product__control-head {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.info-product__control-head::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.09);
+    border-radius: 0.3rem;
+    content: "";
+}
+
+.info-product__button {
+    position: relative;
+    flex: 1 0 calc(100% / 3);
+    padding-bottom: 2.6rem;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease-out;
+}
+
+.info-product__button::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.6rem;
+    background-color: transparent;
+    border-radius: 0.3rem;
+    content: "";
+    transition: background-color 0.3s ease-out;
+}
+
+.info-product__button--active::after {
+    background-color: var(--color-accent);
+}
+/* control end */
+
+.info-product__window-wrapper {
+    padding: 3rem 0;
+}
+
+.info-product__window-item {
+    display: none;
+}
+
+.info-product__window-item--visible {
+    display: block;
+}
+
+.info-product__content:not(:first-child) {
+    margin-top: 4rem;
+}
+
+.info-product__text-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 130%;
+    text-align: left;
+}
+
+.info-product__text p {
+    margin-bottom: 1.4rem;
+    color: var(--color-grey-1);
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 160%;
+}
+
+.info-product__text p:last-child {
+    margin-bottom: 0
+}
+
+
+@media (any-hover: hover) {
+    .info-product__button:hover {
+        color: var(--color-accent);
+    }
+}
+
+@media (max-width : 768px) {
+    .info-product__button {
+
+        padding-bottom: 2.4rem;
+    }
+
+    .info-product__window-wrapper {
+        padding: 2rem 0;
+    }
+
+    .info-product__content:not(:first-child) {
+        margin-top: 2rem;
+    }
+
+    .info-product__text-title {
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .info-product__text p {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+}

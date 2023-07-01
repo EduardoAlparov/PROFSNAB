@@ -1,0 +1,220 @@
+.production {
+    padding: 10rem 0 20rem;
+}
+
+.production__title {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.production__list {
+    padding: 2rem 0;
+}
+
+
+.production__item {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.3rem;
+    padding: 2.2rem 6rem;
+    background: linear-gradient(180deg, #FCFCFC 0%, #FFFFFF 100%);
+    box-shadow: 1rem 3rem 4rem rgba(0, 25, 115, 0.06);
+    border-radius: 0.5rem;
+}
+
+.production__list--features-product .production__item {
+    margin-bottom: 0.5rem;
+    padding: 1.2rem 2rem;
+}
+
+.production__item:last-child {
+    margin-bottom: 0;
+}
+
+.production__list--features-product .production__item:last-child {
+    margin-bottom: 0;
+}
+
+.production__item--big {
+    padding: 0;
+    border-radius: 1rem;
+}
+
+.production__name,
+.production__quantity {
+    flex: 0 0 50%;
+}
+
+
+.production__name {
+    color: var(--color-grey-1);
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 137.5%;
+    text-transform: uppercase;
+}
+
+.production__list--features-product .production__name {
+    font-size: 1.6rem;
+    line-height: 160.5%;
+    text-transform: unset;
+}
+
+.production__quantity-value {
+    display: inline-block;
+    width: 100%;
+    font-size: 3.8rem;
+    font-family: var(--second-ff);
+    text-align: right;
+    letter-spacing: -0.05em;
+    background: linear-gradient(180deg, #18A5D7 0%, #9C31FE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.production__list--features-product .production__quantity-value {
+    font-size: 1.6rem;
+    line-height: 160.5%;
+}
+
+.production--about {
+    padding: 7rem 0 3rem;
+    transform: translateY(-16rem);
+}
+
+.production--about .production__quantity-value {
+    letter-spacing: unset;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.production--about .production__item {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.production--about .production__item:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width : 1199px) {
+    .production {
+        padding: 5rem 0 10rem;
+    }
+
+    .production__item {
+        margin-bottom: 1rem;
+        padding: 2.2rem 4rem;
+    }
+
+    .production__name {
+        font-size: 2rem;
+    }
+
+    .production__quantity-value {
+        font-size: 2.4rem;
+    }
+
+    .production__item--big {
+        padding: 0;
+        border-radius: 1rem;
+    }
+}
+
+@media (max-width : 992px) {
+    .production__title {
+        margin-bottom: 2rem;;
+    }
+}
+
+@media (max-width : 768px) {
+    .production {
+        padding: 2rem 0 3rem;
+    }
+
+    .production__item {
+        padding: 1.5rem 2rem;
+    }
+
+    .production__name {
+        flex: 0 1 auto;
+    }
+
+    .production__quantity {
+        flex: 0 0 auto;
+    }
+
+    .production__name {
+        font-size: 1.6rem;
+    }
+
+    .production__quantity-value {
+        font-size: 2rem;
+    }
+
+    .production__item--big {
+        padding: 0;
+        border-radius: 1rem;
+    }
+
+    .production--about {
+        padding: 3rem 0;
+        transform: translateY(0);
+    }
+
+    .production--about .production__quantity-value {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width : 576px) {
+    .production__item {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .production__name,
+    .production__quantity {
+        flex: 1 0 auto;
+        width: 100%;
+    }
+
+    .production__name {
+        margin-bottom: 1rem;
+        text-align-last: left;
+    }
+
+    .production__name br {
+        display: none;
+    }
+
+    .production__list--features-product .production__item {
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .production__list--features-product .production__name {
+        flex: 1 0 auto;
+        width: unset;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        line-height: 130%;
+    }
+
+    .production__list--features-product .production__quantity {
+        flex: 1 0 auto;
+        width: unset;
+        font-size: 1.4rem;
+        line-height: 130%;
+    }
+
+    .production__item--big {
+        padding: 0;
+        border-radius: 1rem;
+    }
+}

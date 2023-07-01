@@ -1,0 +1,9 @@
+/* tag main */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    flex: 1 0 100%;
+    min-height: 100vh;
+}

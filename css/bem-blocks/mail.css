@@ -1,0 +1,19 @@
+.mail {
+    display: block;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 120%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+@media (any-hover: hover) {
+    .mail:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width : 992px) {
+    .mail {
+        font-size: 1.6rem;
+    }
+}

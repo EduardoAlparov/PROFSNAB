@@ -1,0 +1,48 @@
+.about {
+    background-image: url('../../images/about/background.png'), linear-gradient(104.72deg, rgba(224, 194, 254, 0.5) 1.71%, rgba(169, 99, 201, 0.5) 100%);
+    background-position: center bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto, 100%;
+}
+
+.about__heading {
+    padding-bottom: 6rem;
+}
+
+.about__title {
+    margin-bottom: 4rem;
+}
+
+.about__text {
+    max-width: 75rem;
+    margin-bottom: 2rem;
+}
+
+.about__text p {
+    line-height: 130%;
+}
+
+.about__subtext {
+    max-width: 110rem;
+}
+
+.about__subtext p {
+    font-weight: 300;
+    line-height: 160%;
+}
+
+.about__body {
+    padding: 6rem 0 59.5rem;
+}
+
+@media (max-width : 992px) {
+    .about__body {
+        padding: 3rem 0 30rem;
+    }
+}
+
+@media (max-width : 768px) {
+    .about__body {
+        padding: 1rem 0 20rem;
+    }
+}

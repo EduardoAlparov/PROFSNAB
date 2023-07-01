@@ -1,0 +1,23 @@
+._purple-background {
+    background-image: linear-gradient(104.72deg, rgba(224, 194, 254, 0.5) 1.71%, rgba(169, 99, 201, 0.5) 100%);
+}
+
+._green-background {
+    background-image: linear-gradient(104.72deg, rgba(135, 247, 159, 0.5) 1.71%, rgba(99, 201, 140, 0.5) 100%);
+}
+
+._pink-background {
+    background-image: linear-gradient(104.72deg, rgba(247, 202, 135, 0.5) 1.71%, rgba(255, 103, 103, 0.5) 100%);
+}
+
+._yellow-background {
+    background-image: linear-gradient(104.72deg, rgba(253, 245, 61, 0.5) 1.71%, rgba(244, 148, 59, 0.5) 100%);
+}
+
+._blue-background {
+    background-image: linear-gradient(104.72deg, rgba(135, 206, 247, 0.5) 1.71%, rgba(99, 127, 201, 0.5) 100%);
+}
+
+._light-background {
+    background-image: linear-gradient(180deg, rgba(24, 165, 215, 0.1) 0%, rgba(156, 49, 254, 0.1) 100%);
+}

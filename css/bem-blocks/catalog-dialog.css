@@ -1,0 +1,75 @@
+.catalog-dialog {
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+    z-index: 50;
+    min-width: 48rem;
+    padding-top: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out;
+}
+
+.catalog-dialog__body {
+    position: relative;
+}
+
+.catalog-dialog__list {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.09);
+}
+
+.catalog-dialog__link {
+    display: flex;
+    align-items: stretch;
+    background-color: var(--color-back);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.09);
+    border-width: 0 0 0.1rem 0;
+    transition: color 0.4s ease,
+        background-color 0.4s ease;
+}
+
+.catalog-dialog__link:last-child {
+    border-width: 0 ;
+}
+
+.catalog-dialog__decore {
+    position: absolute;
+    top: -0.6rem;
+    left: 2.5rem;
+    z-index: -1;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.09);
+    background-color: var(--color-back);
+    transform: rotate(45deg) skewY(185deg);
+}
+
+.catalog-dialog__image {
+    max-width: 10rem;
+    max-height: 8rem;
+}
+
+.catalog-dialog__image > img{
+    max-width: 80%;
+    object-fit: cover;
+    object-position: top left;
+}
+
+.catalog-dialog__text {
+    display: block;
+    padding: 2.7rem 0 2.62rem 2.2rem;
+    font-size: 2rem;
+    line-height: 135%;
+}
+
+@media (any-hover: hover) {
+    .catalog-dialog__link:hover {
+        color: var(--color-white);
+        background-color: var(--color-accent);
+    }
+}

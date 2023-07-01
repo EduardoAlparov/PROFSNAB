@@ -1,0 +1,39 @@
+.developer {
+    display: flex;
+    align-items: center;
+}
+
+.developer__text {
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.developer__logo {
+    width: 11.5rem;
+    height: 3rem;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .developer:hover .developer__text {
+        color: var(--color-grey);
+    }
+    .developer:hover .developer__logo {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width : 768px) {
+    .developer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .developer__text {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

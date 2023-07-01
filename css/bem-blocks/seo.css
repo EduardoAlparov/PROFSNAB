@@ -1,0 +1,32 @@
+.seo {
+    padding: 10rem 0 20rem;
+}
+
+.seo__title {
+    margin-bottom: 2rem;
+}
+
+.seo__text-wrapper {
+    border: 0.1rem dotted transparent;
+}
+
+.seo__text-wrapper p {
+    color: var(--color-grey-2);
+    font-size: 2rem;
+    line-height: 160%;
+}
+
+.seo__text-wrapper--closed {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+@media (any-hover: hover) {
+    .seo__text-wrapper--closed:hover {
+        border: 0.1rem dotted var(--color-grey-2);
+    }
+}

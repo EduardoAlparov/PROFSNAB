@@ -1,0 +1,31 @@
+.presentation {
+    padding: 5rem 0 10rem;
+}
+
+.presentation__description .description {
+
+}
+
+.presentation__production.production {
+    padding: 10rem 0 5rem;
+}
+
+@media (max-width : 1199px) {
+    .presentation {
+        padding: 5rem 0;
+    }
+
+    .presentation__production.production {
+        padding: 5rem 0;
+    }
+}
+
+@media (max-width : 768px) {
+    .presentation {
+        padding: 2rem 0 3rem;
+    }
+
+    .presentation__production.production {
+        padding: 3rem 0 2rem;
+    }
+}

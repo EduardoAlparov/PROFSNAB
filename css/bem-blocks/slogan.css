@@ -1,0 +1,38 @@
+.slogan__title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 106%;
+}
+
+.slogan__text {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 130%;
+}
+
+@media (max-width : 1199px) {
+    .slogan__title {
+        white-space: nowrap;
+    }
+
+    .slogan__title br {
+        display: none;
+    }
+
+    .slogan__text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width : 768px) {
+    .slogan__title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width : 576px) {
+    .slogan__title {
+        font-size: 1.6rem;
+    }
+}

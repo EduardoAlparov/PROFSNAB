@@ -1,0 +1,11 @@
+.dialog {
+    outline: none;
+    border: none;
+}
+
+.dialog__body {
+    width: 100%;
+}
+
+.dialog__catalog {
+}

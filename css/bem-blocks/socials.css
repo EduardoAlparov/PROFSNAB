@@ -1,0 +1,14 @@
+.socials {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+
+.socials__btn--green {
+    background-color: var(--color-green);
+}
+
+.socials__btn--blue {
+    background: linear-gradient(180deg, #2AABEE 0%, #229ED9 99.26%);
+}

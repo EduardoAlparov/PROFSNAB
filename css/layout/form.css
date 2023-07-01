@@ -1,0 +1,143 @@
+.form {
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 0;
+    background-color: var(--color-back);
+}
+
+.form__body {
+    max-width: 41%;
+}
+
+.form__heading {
+    margin-bottom: 3rem;
+}
+
+.form__title {
+    margin-bottom: 1rem;
+}
+
+.form__text {
+    padding-left: 2.8rem;
+}
+
+.form__inputs {
+    margin-bottom: 2rem;
+}
+
+.form__input-wrapper {
+    margin-bottom: 2rem;
+}
+
+.form__input-wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.form__input {
+    width: 100%;
+    padding: 2.3rem 2.5rem;
+    color: var(--color-black);
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 130%;
+    background-color: var(--color-white);
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
+}
+
+.form__submit-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 2.4rem;
+}
+
+.form__submit {
+    flex-shrink: 0;
+}
+
+.form__agreement {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 130%;
+}
+
+.form__agreement a:hover {
+    text-decoration: underline;
+}
+
+.form__image {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    bottom: -15%;
+    z-index: 1;
+    width: 128rem;
+    transform: translateX(-6%);
+}
+
+.form__image img {
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (max-width : 1199px) {
+    .form {
+        padding: 5rem 0;
+    }
+
+    .form__body {
+        max-width: 50%;
+    }
+
+    .form__image {
+        top: 20%;
+        left: 55%;
+        width: 100rem;
+        transform: translateX(-6%);
+    }
+}
+
+@media (max-width : 992px) {
+    .form__body {
+        max-width: 60%;
+    }
+
+    .form__image {
+        top: 0%;
+        left: 65%;
+        width: 134rem;
+        transform: translateX(-6%);
+    }
+}
+
+@media (max-width : 768px) {
+    .form {
+        padding: 3rem 0;
+    }
+
+    .form__body {
+        max-width: 100%;
+    }
+
+    .form__image {
+        display: none;
+    }
+
+    .form__input {
+        padding: 1.8rem 2rem;
+        font-size: 1.4rem;
+        border-radius: 2rem;
+    }
+
+    .form__agreement {
+        font-size: 1rem;
+    }
+
+    .form__agreement br {
+        display: none;
+    }
+
+    .form__submit-wrapper {
+        column-gap: 1.4rem;
+    }
+}

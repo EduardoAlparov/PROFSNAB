@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Сертификаты</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+    <!-- swiper css -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+	/>
+	<!-- fancybox css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <!-- gsap js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" defer></script>
+    <!-- swiper js -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+	<!-- fancybox -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- imask js -->
+	<script src="https://unpkg.com/imask"></script>
+	<!-- main js -->
+	<script src="js/common.js" type="module" defer></script>
+</head>
+
+<body class="preload _for-white-header">
+
+	<div class="wrapper">
+		<!-- fixed header start -->
+        <header class="header fix-block">
+			<div class="header__heading">
+				<div class="header__container">
+					<div class="header__row">
+						<div class="header__logo">
+							<a href="/" class="logo">
+								<div class="logo__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#logo"></use>
+									</svg>
+								</div>
+							</a>
+						</div>
+
+						<div class="header__info">
+							<a href="#" class="address">
+								<span class="address__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#location"></use>
+									</svg>
+								</span>
+
+								<span class="address__text">
+									г.Казань, ул. ул.Магистральная, зд 35, помещение 2
+								</span>
+							</a>
+
+							<div class="socials">
+								<a href="#" class="socials__btn socials__btn--green round-icon-button">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+
+								<a href="#" class="socials__btn socials__btn--blue round-icon-button">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#telegram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="header__phone">
+							<a href="tel:+7 (965) 581−85-25" class="phone">
+								<span class="phone__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#phone"></use>
+									</svg>
+								</span>
+								<span class="phone__text">
+									+7 (965) 581−85-25
+								</span>
+							</a>
+						</div>
+
+						<div class="header__burger">
+							<button class="burger-button" data-path="mobile-menu">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#burger"></use>
+								</svg>
+							</button>
+						</div>
+
+						<div class="header__searchbar js-searchbar-control">
+							<div class="searchbar  searchbar--mobile">
+								<button class="searchbar__open-btn js-searchbar-open">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#search"></use>
+									</svg>
+								</button>
+
+								<div class="searchbar__popup">
+									<div class="searchbar__content">
+										<div class="searchbar__input-wrapper">
+											<input
+												class="searchbar__input"
+												type="text"
+												placeholder="Введите запрос"
+											>
+										</div>
+										<button class="searchbar__submit blue-button">
+											найти
+										</button>
+										<button class="searchbar__open-btn searchbar__open-btn--grey js-searchbar-close">
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#close"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header__button">
+							<button class="text-icon-button" data-path="modal">
+								<span class="text-icon-button__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#RArrow"></use>
+									</svg>
+								</span>
+								<span class="text-icon-button__text">
+									Заказать звонок
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu">
+				<div class="header__container">
+					<div class="header__row header__row--max-width">
+						<div class="header__nav header__searchbar js-searchbar-control">
+							<nav class="menu">
+								<ul class="menu__list">
+									<li class="menu__item menu__item--catalog">
+										<a href="#" class="menu__link js-catalog-btn">
+											Каталог
+										</a>
+										<div class="catalog-dialog">
+											<div class="catalog-dialog__body">
+												<div class="catalog-dialog__list">
+													<a href="./page-catalog-piles.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/piles.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Сваи
+														</span>
+													</a>
+													<a href="./page-catalog-plate.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/plate.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Плиты перкрытий
+														</span>
+													</a>
+													<a href="./page-catalog-concrete.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/concrete.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Бетон
+														</span>
+													</a>
+													<a href="./page-catalog-slab.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/slab.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Плиты дорожные
+														</span>
+													</a>
+													<a href="./page-catalog-individual.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/indiv.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Индивидуальные изделия
+														</span>
+													</a>
+
+												</div>
+												<div class="catalog-dialog__decore">
+
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="menu__item">
+										<a href="./page-about.html" class="menu__link">
+											О компании
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="./page-certificate.html" class="menu__link">
+											Сертификаты
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="./page-vacancy.html" class="menu__link">
+											Вакансии
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="./page-contacts.html" class="menu__link">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</nav>
+
+							<div class="searchbar">
+								<button class="searchbar__open-btn js-searchbar-open">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#search"></use>
+									</svg>
+								</button>
+
+								<div class="searchbar__popup">
+									<div class="searchbar__content">
+										<div class="searchbar__input-wrapper">
+											<input
+												class="searchbar__input"
+												type="text"
+												placeholder="Введите запрос"
+											>
+										</div>
+										<button class="searchbar__submit blue-button">
+											найти
+										</button>
+										<button class="searchbar__open-btn searchbar__open-btn--grey js-searchbar-close">
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#close"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header__cart">
+							<a href="#" class="round-icon-button round-icon-button--blue round-icon-button--bigger">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#shop"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- fixed header end -->
+
+		<main class="main">
+
+            <section class="section category certificate">
+				<div class="category__heading certificate__heading section__heading">
+					<div class="category__container">
+						<div class="section__breadcrumbs breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="/" class="breadcrumbs__link">
+										Главная
+									</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">
+										Сертификаты
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="category__titles">
+							<h1 class="category__title">
+								Сертификаты
+							</h1>
+
+						</div>
+					</div>
+				</div>
+                <div class="section__shift-wrapper category__shift-wrapper certificate__shift-wrapper">
+					<div class="category__container">
+                        <ul class="certificate__list" data-role="fancybox-container">
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-1.jpg" data-fancybox="certificates">
+                                    <img src="./images/certificate/image-1.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-2.jpg"  data-fancybox="certificates">
+                                    <img src="./images/certificate/image-2.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-1.jpg" data-fancybox="certificates">
+                                    <img src="./images/certificate/image-1.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-2.jpg"  data-fancybox="certificates">
+                                    <img src="./images/certificate/image-2.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-1.jpg" data-fancybox="certificates">
+                                    <img src="./images/certificate/image-1.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-2.jpg"  data-fancybox="certificates">
+                                    <img src="./images/certificate/image-2.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-1.jpg" data-fancybox="certificates">
+                                    <img src="./images/certificate/image-1.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-2.jpg"  data-fancybox="certificates">
+                                    <img src="./images/certificate/image-2.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-1.jpg" data-fancybox="certificates">
+                                    <img src="./images/certificate/image-1.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-2.jpg"  data-fancybox="certificates">
+                                    <img src="./images/certificate/image-2.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-1.jpg" data-fancybox="certificates">
+                                    <img src="./images/certificate/image-1.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                            <li class="certificate__item">
+                                <a href="#" class="certificate__image" data-src="./images/certificate/image-2.jpg"  data-fancybox="certificates">
+                                    <img src="./images/certificate/image-2.jpg" alt="Сертификат ПК ПРОФСНАБ">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+			<form action="#" class="form">
+				<div class="form__container">
+					<div class="form__body">
+						<div class="form__heading">
+							<h2 class="form__title section-title section-title--no-icon">
+								Получить консультацию
+							</h2>
+							<div class="form__text">
+								<p class="text">
+									Наш менеджер свяжеться с вами и расскажет о
+									всех преимуществах нашей продукции
+								</p>
+							</div>
+						</div>
+
+						<div class="form__inputs">
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input js-input-mask_text" placeholder="Ваше имя" required>
+							</div>
+
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input js-input-mask_phone" placeholder="Номер телефона" required>
+							</div>
+						</div>
+
+						<div class="form__submit-wrapper">
+							<button class="form__submit text-icon-button text-icon-button--bigger">
+								<span class="text-icon-button__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#RArrow"></use>
+									</svg>
+								</span>
+								<span class="text-icon-button__text">
+									Отправить
+								</span>
+							</button>
+
+							<div class="form__agreement">
+								<span>
+									Нажимая на кнопку «Отправить», вы даёте<br>
+									своё согласие на&nbsp;
+								</span>
+								<a href="#">
+									обработку&nbsp;персональных&nbsp;данных
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__image">
+					<img src="./images/form/track.png" alt="">
+				</div>
+			</form>
+		</main>
+
+		<footer class="footer">
+
+			<div class="footer__heading">
+				<div class="footer__container">
+					<h2 class="footer__title">
+						КОНТАКТЫ
+					</h2>
+
+					<div class="footer__row">
+
+						<div class="footer__contacts">
+							<a href="tel:+7 (965) 581−85-25" class="phone phone--white">
+								<span class="phone__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#phone"></use>
+									</svg>
+								</span>
+								<span class="phone__text">
+									+7 965 581−85-25
+								</span>
+							</a>
+
+							<a href="#" class="address address--white">
+								<span class="address__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#location"></use>
+									</svg>
+								</span>
+
+								<span class="address__text">
+									г.Казань, ул. ул.Магистральная, зд&nbsp;35,&nbsp;помещение&nbsp;2
+								</span>
+							</a>
+
+							<a href="mailto:zakaz@pkbeton.ru" class="mail">
+								zakaz@pkbeton.ru
+							</a>
+
+							<div class="footer__row">
+								<button class="text-icon-button text-icon-button--white">
+									<span class="text-icon-button__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#RArrow"></use>
+										</svg>
+									</span>
+									<span class="text-icon-button__text">
+										Заказать звонок
+									</span>
+								</button>
+
+								<div class="socials">
+									<a href="#" class="socials__btn socials__btn--green round-icon-button round-icon-button--bigger">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#whatsapp"></use>
+										</svg>
+									</a>
+
+									<a href="#" class="socials__btn socials__btn--blue round-icon-button round-icon-button--bigger">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#telegram"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__nav">
+							<div class="footer__catalog catalog-footer">
+								<div class="catalog-footer__title slogan__title">
+									Каталог
+								</div>
+
+								<ul class="catalog-footer__list">
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Сваи
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Плиты перекрытия
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Бетон
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Плиты дорожные
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Колонны
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Индивидуальные изделия
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__menu menu-footer">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link slogan__title">
+											О компании
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link slogan__title">
+											Сертификаты
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link slogan__title">
+											Вакансии
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link slogan__title">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="footer__slogan slogan">
+							<div class="slogan__title">
+								<span>Доставка</span>
+								<br>
+								<span>без посредников</span>
+							</div>
+
+							<div class="slogan__text">
+								<p>
+									Гарантируем лучшее качество и самые выгодные
+									цены на рынке. Наши мощности позволяют
+									отгружать до 1500 кубов/сутки! Доставим
+									бетон собственным автобетоносмесителем и 
+									автобетононасосом от 18 до 65м!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__basement">
+				<div class="footer__container">
+					<div class="footer__row">
+						<div class="policy">
+							<span class="policy__text">
+								© 2022 «pkbeton.ru»
+							</span>
+							<a href="#" class="policy__link">
+								Политика конфиденциальности
+							</a>
+						</div>
+
+						<a href="" class="developer">
+							<span class="developer__text">
+								Разработано в
+							</span>
+
+							<span class="developer__logo">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#dev"></use>
+								</svg>
+							</span>
+						</a>
+
+						<button class="scroll-up-button">
+							<span class="scroll-up-button__icon">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#RArrow"></use>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	<!-- mobile menu start -->
+	<div class="modal">
+		<div class="modal__content modal__content--mobile _blue-background" data-target="mobile-menu">
+			<button class="modal__close-btn modal-close">
+				<svg class="icon">
+					<use xlink:href="./images/sprite.svg#close"></use>
+				</svg>
+			</button>
+
+			<div class="modal__body">
+				<div class="modal__menu menu-footer menu-footer--mobile-menu">
+					<ul class="menu-footer__list">
+						<li class="menu-footer__item">
+							<a href="#" class="menu-footer__link slogan__title">
+								О компании
+							</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#" class="menu-footer__link slogan__title">
+								Сертификаты
+							</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#" class="menu-footer__link slogan__title">
+								Вакансии
+							</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#" class="menu-footer__link slogan__title">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="modal__catalog catalog-footer catalog-footer--menu">
+					<div class="catalog-footer__title slogan__title">
+						Каталог
+					</div>
+
+					<ul class="catalog-footer__list">
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Сваи
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Плиты перекрытия
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Бетон
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Плиты дорожные
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Колонны
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Индивидуальные изделия
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<a href="tel:+7 (965) 581−85-25" class="modal__phone phone">
+					<span class="phone__icon">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#phone"></use>
+						</svg>
+					</span>
+					<span class="phone__text">
+						+7 965 581−85-25
+					</span>
+				</a>
+
+				<a href="#" class="modal__address address">
+					<span class="address__icon">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#location"></use>
+						</svg>
+					</span>
+
+					<span class="address__text">
+						г.Казань, ул. ул.Магистральная, зд&nbsp;35,&nbsp;помещение&nbsp;2
+					</span>
+				</a>
+
+				<div class="socials">
+					<a href="#" class="socials__btn socials__btn--green round-icon-button round-icon-button--bigger">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#whatsapp"></use>
+						</svg>
+					</a>
+
+					<a href="#" class="socials__btn socials__btn--blue round-icon-button round-icon-button--bigger">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#telegram"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- mobile menu end -->
+
+	<!-- call back modal start -->
+	<div class="modal">
+		<div class="modal__content" data-target="modal">
+			<button class="modal__close-btn modal-close">
+				<svg class="icon">
+					<use xlink:href="./images/sprite.svg#close"></use>
+				</svg>
+			</button>
+
+			<div class="modal__body">
+				<form action="#" class="modal__form">
+					<div class="form__body">
+						<div class="form__heading">
+							<h3 class="form__title _ta-center _black-color">
+								Заказать звонок
+							</h3>
+
+							<div class="form__text _ta-center">
+								<p class="text">
+									Наш менеджер свяжеться с вами и расскажет о
+									всех преимуществах нашей продукции
+								</p>
+							</div>
+						</div>
+
+						<div class="form__inputs">
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input" placeholder="Ваше имя" required>
+							</div>
+
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input" placeholder="Номер телефона" required>
+							</div>
+						</div>
+
+						<div class="form__submit-wrapper">
+							<button class="form__submit text-icon-button text-icon-button--small">
+								<span class="text-icon-button__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#RArrow"></use>
+									</svg>
+								</span>
+								<span class="text-icon-button__text">
+									Отправить
+								</span>
+							</button>
+
+							<div class="form__agreement">
+								<span>
+									Нажимая на кнопку «Отправить», вы даёте
+									своё согласие на
+								</span>
+								<a href="#">
+									обработку&nbsp;персональных&nbsp;данных
+								</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- call back modal end -->
+</body>
+</html>

@@ -1,0 +1,45 @@
+.address {
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+.address__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.address--white .address__icon {
+    display: none;
+}
+
+.address__text {
+    font-size: 1.6rem;
+    color: var(--color-black);
+}
+
+.address--white .address__text {
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 140%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+@media (any-hover: hover) {
+    .address:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width : 1199px) {
+    .address--white .address__text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width : 768px) {
+    .address--white .address__text {
+        font-size: 1.4rem;
+    }
+}

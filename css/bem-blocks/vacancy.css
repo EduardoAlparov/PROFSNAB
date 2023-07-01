@@ -1,0 +1,139 @@
+.vacancy__heading--padding {
+    padding-bottom: 17.2rem;
+}
+
+.vacancy__list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transform: translateY(-6.4rem);
+    padding-bottom: 14.6rem;
+}
+
+.vacancy__item {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    column-gap: 6rem;
+    margin-bottom: 1rem;
+    padding: 4rem;
+    background-color: var(--color-white);
+    box-shadow: 10px 30px 40px rgba(0, 25, 115, 0.06);
+    border-radius: 0.5rem;
+}
+
+.vacancy__item:last-child {
+    margin-bottom: 0;
+}
+
+.vacancy__role-value {
+    color: var(--color-black);
+    font-family: var(--second-ff);
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 106%;
+}
+
+.vacancy__desc {
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+}
+
+.vacancy__desc-value {
+    color: var(--color-grey-1);
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 160%;
+}
+
+.vacancy__right {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vacancy__salary {
+    margin-bottom: 2rem;
+}
+
+.vacancy__salary-value {
+    color: var(--color-accent);
+    font-family: var(--second-ff);
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 106%;
+    white-space: nowrap;
+}
+
+@media (max-width : 1199px) {
+    .vacancy__heading--padding {
+        padding-bottom: 12.2rem;
+    }
+
+    .vacancy__role-value {
+        font-size: 2rem;
+    }
+
+    .vacancy__desc-value {
+        font-size: 1.6rem;
+    }
+
+    .vacancy__salary-value {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width : 992px) {
+    .vacancy__item {
+        flex-direction: column;
+        column-gap: unset;
+        margin-bottom: 1rem;
+        padding: 2rem;
+    }
+
+    .vacancy__right {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 2rem;
+    }
+
+    .vacancy__salary {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width : 768px) {
+    .vacancy__heading--padding {
+        padding-bottom: 3.2rem;
+    }
+
+    .vacancy__list {
+        transform: unset;
+        padding-bottom: 3.6rem;
+    }
+}
+
+@media (max-width : 576px) {
+    .vacancy__item {
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+    }
+
+    .vacancy__right {
+        flex-direction: column;
+        align-items: stretch;
+        column-gap: unset;
+    }
+
+    .vacancy__salary {
+        margin-bottom: 2rem;
+    }
+
+    .vacancy__button .text-icon-button--vacancy {
+        text-align: center;
+    }
+}

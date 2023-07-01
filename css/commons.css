@@ -1,0 +1,58 @@
+
+._uppercase {
+    text-transform: uppercase;
+}
+
+._white-color {
+    color: var(--color-white);
+}
+
+._black-color {
+    color: var(--color-black);
+}
+
+._block-scrolling {
+    overflow: hidden;
+}
+
+._ta-center {
+    text-align: center;
+}
+
+.disable-scroll {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+/* ::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; } */
+
+input, textarea {
+    outline: none;
+}
+
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+    border-color: transparent;
+}
+
+input:required:valid,
+textarea:required:valid {
+    border-color: transparent;
+}
+
+.fancybox__container {
+    max-width: unset !important;
+}

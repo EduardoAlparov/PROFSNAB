@@ -1,0 +1,24 @@
+.menu-footer__item {
+    margin-bottom: 2rem;
+}
+
+.menu-footer__item:last-child {
+    margin-bottom: 0;
+}
+
+.menu-footer--mobile-menu .menu-footer__list {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+}
+
+
+@media (any-hover: hover) {
+    .menu-footer__link:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width : 992px) {
+
+}

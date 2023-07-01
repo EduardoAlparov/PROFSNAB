@@ -1,0 +1,66 @@
+.intro {
+    height: 100%;
+    background: linear-gradient(180deg, rgba(24, 165, 215, 0.3) 0%, rgba(156, 49, 254, 0.3) 100%);
+}
+
+.intro__container {
+    height: 100%;
+}
+
+.intro__swiper-button-prev,
+.intro__swiper-button-next {
+    width: 6rem !important;
+    height: 6rem !important;
+    margin-top: -3.7rem !important;
+    background-color: rgba(0, 0, 0, 0.09);
+    border: 0.1rem solid rgba(0, 0, 0, 0.09);
+    outline: none;
+    border-radius: 100%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.intro__swiper-button-prev .icon {
+    width: 1.4rem;
+    will-change: transform;
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+}
+
+.intro__swiper-button-next .icon {
+    width: 1.4rem;
+    will-change: transform;
+    transition: 0.2s ease;
+}
+
+@media (any-hover: hover) {
+    .intro__swiper-button-prev:hover,
+    .intro__swiper-button-next:hover {
+        background-color: var(--color-accent);
+    }
+}
+
+.intro__swiper-button-prev:active .icon {
+    transform: rotate(180deg) scale(1.2);
+}
+
+.intro__swiper-button-next:active .icon {
+    transform: scale(1.2);
+}
+
+@media (max-width : 992px) {
+    .intro__swiper-button-prev,
+    .intro__swiper-button-next {
+        width: 4rem !important;
+        height: 4rem !important;
+        margin-top: -0rem !important;
+    }
+
+    .intro__swiper-button-prev .icon {
+        width: 1.2rem;
+    }
+
+    .intro__swiper-button-next .icon {
+        width: 1.2rem;
+    }
+}

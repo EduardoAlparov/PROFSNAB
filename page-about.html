@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>О компании</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- swiper css -->
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+	/>
+
+	<!-- gsap js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" defer></script>
+
+	<!-- swiper js -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+	<!-- imask js -->
+	<script src="https://unpkg.com/imask"></script>
+	<!-- main js -->
+	<script src="js/common.js" type="module" defer></script>
+
+</head>
+
+<body class="preload _with-scroll-animation">
+
+	<div class="wrapper">
+		<!-- fixed header start -->
+        <header class="header fix-block">
+			<div class="header__heading">
+				<div class="header__container">
+					<div class="header__row">
+						<div class="header__logo">
+							<a href="/" class="logo">
+								<div class="logo__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#logo"></use>
+									</svg>
+								</div>
+							</a>
+						</div>
+
+						<div class="header__info">
+							<a href="#" class="address">
+								<span class="address__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#location"></use>
+									</svg>
+								</span>
+
+								<span class="address__text">
+									г.Казань, ул. ул.Магистральная, зд 35, помещение 2
+								</span>
+							</a>
+
+							<div class="socials">
+								<a href="#" class="socials__btn socials__btn--green round-icon-button">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+
+								<a href="#" class="socials__btn socials__btn--blue round-icon-button">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#telegram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="header__phone">
+							<a href="tel:+7 (965) 581−85-25" class="phone">
+								<span class="phone__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#phone"></use>
+									</svg>
+								</span>
+								<span class="phone__text">
+									+7 (965) 581−85-25
+								</span>
+							</a>
+						</div>
+
+						<div class="header__burger">
+							<button class="burger-button" data-path="mobile-menu">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#burger"></use>
+								</svg>
+							</button>
+						</div>
+
+						<div class="header__searchbar js-searchbar-control">
+							<div class="searchbar  searchbar--mobile">
+								<button class="searchbar__open-btn js-searchbar-open">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#search"></use>
+									</svg>
+								</button>
+
+								<div class="searchbar__popup">
+									<div class="searchbar__content">
+										<div class="searchbar__input-wrapper">
+											<input
+												class="searchbar__input"
+												type="text"
+												placeholder="Введите запрос"
+											>
+										</div>
+										<button class="searchbar__submit blue-button">
+											найти
+										</button>
+										<button class="searchbar__open-btn searchbar__open-btn--grey js-searchbar-close">
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#close"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header__button">
+							<button class="text-icon-button" data-path="modal">
+								<span class="text-icon-button__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#RArrow"></use>
+									</svg>
+								</span>
+								<span class="text-icon-button__text">
+									Заказать звонок
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu">
+				<div class="header__container">
+					<div class="header__row header__row--max-width">
+						<div class="header__nav header__searchbar js-searchbar-control">
+							<nav class="menu">
+								<ul class="menu__list">
+									<li class="menu__item menu__item--catalog">
+										<a href="#" class="menu__link js-catalog-btn">
+											Каталог
+										</a>
+										<div class="catalog-dialog">
+											<div class="catalog-dialog__body">
+												<div class="catalog-dialog__list">
+													<a href="./page-catalog-piles.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/piles.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Сваи
+														</span>
+													</a>
+													<a href="./page-catalog-plate.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/plate.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Плиты перкрытий
+														</span>
+													</a>
+													<a href="./page-catalog-concrete.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/concrete.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Бетон
+														</span>
+													</a>
+													<a href="./page-catalog-slab.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/slab.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Плиты дорожные
+														</span>
+													</a>
+													<a href="./page-catalog-individual.html" class="catalog-dialog__link">
+														<div class="catalog-dialog__image">
+															<img src="./images/catalogs/indiv.png" alt="">
+														</div>
+														<span class="catalog-dialog__text">
+															Индивидуальные изделия
+														</span>
+													</a>
+
+												</div>
+												<div class="catalog-dialog__decore">
+
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="menu__item">
+										<a href="./page-about.html" class="menu__link">
+											О компании
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="./page-certificate.html" class="menu__link">
+											Сертификаты
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="./page-vacancy.html" class="menu__link">
+											Вакансии
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="./page-contacts.html" class="menu__link">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</nav>
+
+							<div class="searchbar">
+								<button class="searchbar__open-btn js-searchbar-open">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#search"></use>
+									</svg>
+								</button>
+
+								<div class="searchbar__popup">
+									<div class="searchbar__content">
+										<div class="searchbar__input-wrapper">
+											<input
+												class="searchbar__input"
+												type="text"
+												placeholder="Введите запрос"
+											>
+										</div>
+										<button class="searchbar__submit blue-button">
+											найти
+										</button>
+										<button class="searchbar__open-btn searchbar__open-btn--grey js-searchbar-close">
+											<svg class="icon">
+												<use xlink:href="./images/sprite.svg#close"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header__cart">
+							<a href="#" class="round-icon-button round-icon-button--blue round-icon-button--bigger">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#shop"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- fixed header end -->
+
+		<main class="main">
+            <section class="section category about">
+                <div class="category__heading section__heading intro-trigger _animate-on-delete">
+					<div class="category__container">
+						<div class="section__breadcrumbs breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="/" class="breadcrumbs__link">
+										Главная
+									</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">
+										О компании
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="category__titles">
+							<h1 class="category__title about__title">
+                                О компании
+                            </h1>
+
+                            <div class="category__text about__text">
+                                <p class="text-biggest">
+                                    23 года работаем на рынке сельскохозяйственной
+                                    техники. Shineray Motors Rus – максимум преимуществ!
+                                </p>
+                            </div>
+
+                            <div class="category__text about__subtext">
+                                <p class="text-big">
+                                    ООО «Березовский ЗСК» – одно из масштабных предприятий
+                                    Свердловской области, которое уже более 70 лет осуществляет
+                                    выпуск практичных и долговечных ЖБИ. Главенствующей
+                                    спецификой завода железобетонных изделий и конструкций
+                                    является производство продукции, востребованной в
+                                    области электроэнергетического строительства,
+                                    одновременно налажено и изготовление изделий для
+                                    нефтяной и газовой сферы, дорожно-коммунального
+                                    хозяйства, гражданского, промышленного строительства.
+                                </p>
+                            </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__shift-wrapper about__body intro-trigger _animate-on-delete">
+					<div class="category__container">
+                        <div class="about__stages stages>
+                            <h2 class="stages__title">
+                                Этапы работы с вами
+                            </h2>
+                            <div class="stages__body">
+                                <div class="stages__item stages__item--one">
+                                    <div class="stages__item-inner">
+                                        <div class="stages__content">
+                                            <span class="stages__text">
+                                                вы<br>
+                                                совершаете заказ
+                                            </span>
+                                            <span class="stages__number">
+                                                01
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="stages__decore-outer">
+                                        <div class="stages__decore-inner">
+                                            <div class="stages__figure-one">
+                                                <div class="stages__figure-inner"></div>
+                                            </div>
+                                            <div class="stages__figure-two">
+                                                <div class="stages__figure-inner">
+                                                    <div class="stages__figure-circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stages__item stages__item--two">
+                                    <div class="stages__item-inner">
+                                        <div class="stages__content">
+                                            <span class="stages__text">
+                                                вы<br>
+                                                совершаете заказ
+                                            </span>
+                                            <span class="stages__number">
+                                                02
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="stages__decore-outer">
+                                        <div class="stages__decore-inner">
+                                            <div class="stages__figure-one">
+                                                <div class="stages__figure-inner"></div>
+                                            </div>
+                                            <div class="stages__figure-two">
+                                                <div class="stages__figure-inner">
+                                                    <div class="stages__figure-circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stages__item stages__item--three">
+                                    <div class="stages__item-inner">
+                                        <div class="stages__content">
+                                            <span class="stages__text">
+                                                вы<br>
+                                                совершаете заказ
+                                            </span>
+                                            <span class="stages__number">
+                                                03
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="stages__decore-outer">
+                                        <div class="stages__decore-inner">
+                                            <div class="stages__figure-one">
+                                                <div class="stages__figure-inner"></div>
+                                            </div>
+                                            <div class="stages__figure-two">
+                                                <div class="stages__figure-inner">
+                                                    <div class="stages__figure-circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stages__item stages__item--four">
+                                    <div class="stages__item-inner">
+                                        <div class="stages__content">
+                                            <span class="stages__text">
+                                                вы<br>
+                                                совершаете заказ
+                                            </span>
+                                            <span class="stages__number">
+                                                04
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="stages__decore-outer">
+                                        <div class="stages__decore-inner">
+                                            <div class="stages__figure-one">
+                                                <div class="stages__figure-inner"></div>
+                                            </div>
+                                            <div class="stages__figure-two">
+                                                <div class="stages__figure-inner">
+                                                    <div class="stages__figure-circle">
+                                                        <div class="stages__figure-circle"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+            </section>
+
+            <section class="section production production--about">
+                <div class="production__container">
+
+                    <ul class="production__list animation-trigger _animate-on-delete">
+                        <li class="production__item production__item--big">
+                            <div class="advantege advantege--about">
+                                <div class="advantege__body production__quantity-value">
+                                    <div class="advantege__text-up">
+                                        <span>
+                                            Прямые поставки с завода.
+                                        </span>
+                                    </div>
+                                    <div class="advantege__text-down">
+                                        <span>
+                                            Вы получаете цену от завода-производителя без посредников
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="advantege__circle">
+
+                                </div>
+
+                                <div class="advantege__image">
+									<div class="advantages__icon advantages__icon--adv1"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="production__item production__item--big">
+                            <div class="advantege advantege--about">
+                                <div class="advantege__body production__quantity-value ">
+                                    <div class="advantege__text-up">
+                                        <span>
+                                            у нас Гибкая система ценообразования.
+                                        </span>
+                                    </div>
+                                    <div class="advantege__text-down">
+                                        <span>
+                                            За счет собственного производства мы контролируем цены.
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="advantege__circle">
+
+                                </div>
+
+                                <div class="advantege__image">
+									<div class="advantages__icon advantages__icon--adv2"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="production__item production__item--big">
+                            <div class="advantege advantege--about">
+                                <div class="advantege__body production__quantity-value ">
+                                    <div class="advantege__text-up">
+                                        <span>
+                                            Предоставляем все документы.
+                                        </span>
+                                    </div>
+                                    <div class="advantege__text-down">
+                                        <span>
+                                            Договор и товарная накладная, документ качества
+                                        </span>
+                                    </div>
+                                    <div class="advantege__text-three">
+                                        <span>
+                                            от лаборатории, паспорт качества на оборудование
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="advantege__circle">
+
+                                </div>
+
+                                <div class="advantege__image">
+									<div class="advantages__icon advantages__icon--adv3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="production__item production__item--big">
+                            <div class="advantege advantege--about">
+                                <div class="advantege__body production__quantity-value ">
+                                    <div class="advantege__text-up">
+                                        <span>
+                                            Собственный автопарк спецтехники.
+                                        </span>
+                                    </div>
+                                    <div class="advantege__text-down">
+                                        <span>
+                                            Все виды специальной техники для доставки продукции
+                                        </span>
+                                    </div>
+                                    <div class="advantege__text-three">
+                                        <span>
+                                            всех видов и размеров.
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="advantege__circle">
+
+                                </div>
+
+                                <div class="advantege__image">
+									<div class="advantages__icon advantages__icon--adv4"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section catalogs catalogs--about animation-trigger _animate-on-delete">
+				<div class="catalogs__container">
+                    <h2 class="catalogs__title section-title _ta-center">
+                        Наша продукция
+                    </h2>
+
+					<ul class="catalogs__list">
+						<li class="catalogs__item catalogs__item--small">
+							<a href="./page-catalog-piles.html" class="link-catalog" target="_blank">
+								<div class="link-catalog__body">
+									<div class="link-catalog__above _purple-background">
+										<div class="link-catalog__image">
+											<img src="./images/catalogs/piles.png" alt="">
+										</div>
+									</div>
+
+									<div class="link-catalog__below">
+										<div class="link-catalog__title">
+											Cваи
+										</div>
+									</div>
+
+									<div class="link-catalog__mask">
+										<div class="link-catalog__below">
+											<div class="link-catalog__title _white-color">
+												Cваи
+											</div>
+
+											<div class="link-catalog__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#RArrow"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+
+						<li class="catalogs__item catalogs__item--small">
+							<a href="./page-catalog-plate.html" class="link-catalog" target="_blank">
+								<div class="link-catalog__body">
+									<div class="link-catalog__above _green-background">
+										<div class="link-catalog__image">
+											<img src="./images/catalogs/plate.png" alt="">
+										</div>
+									</div>
+
+									<div class="link-catalog__below">
+										<div class="link-catalog__title">
+											Плиты перекрытий
+										</div>
+									</div>
+
+									<div class="link-catalog__mask">
+										<div class="link-catalog__below">
+											<div class="link-catalog__title _white-color">
+												Плиты перекрытий
+											</div>
+
+											<div class="link-catalog__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#RArrow"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+
+						<li class="catalogs__item catalogs__item--small">
+							<a href="./page-catalog-concrete.html" class="link-catalog" target="_blank">
+								<div class="link-catalog__body">
+									<div class="link-catalog__above _pink-background">
+										<div class="link-catalog__image">
+											<img src="./images/catalogs/concrete.png" alt="">
+										</div>
+									</div>
+
+									<div class="link-catalog__below">
+										<div class="link-catalog__title">
+											Бетон
+										</div>
+									</div>
+
+									<div class="link-catalog__mask">
+										<div class="link-catalog__below">
+											<div class="link-catalog__title _white-color">
+												Бетон
+											</div>
+
+											<div class="link-catalog__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#RArrow"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+
+						<li class="catalogs__item catalogs__item--large">
+							<a href="./page-catalog-slab.html" class="link-catalog" target="_blank">
+								<div class="link-catalog__body">
+									<div class="link-catalog__above _yellow-background">
+										<div class="link-catalog__image">
+											<img src="./images/catalogs/slab.png" alt="">
+										</div>
+									</div>
+
+									<div class="link-catalog__below">
+										<div class="link-catalog__title">
+											Плиты дорожные
+										</div>
+									</div>
+
+									<div class="link-catalog__mask">
+										<div class="link-catalog__below">
+											<div class="link-catalog__title _white-color">
+												Плиты дорожные
+											</div>
+
+											<div class="link-catalog__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#RArrow"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+
+						<li class="catalogs__item catalogs__item--large">
+							<a href="./page-catalog-individual.html" class="link-catalog" target="_blank">
+								<div class="link-catalog__body">
+									<div class="link-catalog__above _blue-background">
+										<div class="link-catalog__image link-catalog__image--double">
+											<img src="./images/catalogs/indiv.png" alt="">
+											<img src="./images/catalogs/column.png" alt="">
+										</div>
+									</div>
+
+									<div class="link-catalog__below">
+										<div class="link-catalog__title">
+											Индивидуальные изделия
+										</div>
+									</div>
+
+									<div class="link-catalog__mask">
+										<div class="link-catalog__below">
+											<div class="link-catalog__title _white-color">
+												Индивидуальные изделия
+											</div>
+
+											<div class="link-catalog__icon">
+												<svg class="icon">
+													<use xlink:href="./images/sprite.svg#RArrow"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+            <section class="section production animation-trigger _animate-on-delete">
+                <div class="production__container">
+                    <h2 class="production__title section-title">
+                        Производственные мощности
+                    </h2>
+
+                    <ul class="production__list">
+                        <li class="production__item">
+                            <div class="production__name">
+                                плиты перекрытий<br>
+                                различных типов и размеров
+                            </div>
+
+                            <div class="production__quantity">
+                                <span class="production__quantity-value">
+                                    60 шт в день
+                                </span>
+                            </div>
+                        </li>
+                        <li class="production__item">
+                            <div class="production__name">
+                                сваи<br>
+                                различного сечения
+                            </div>
+
+                            <div class="production__quantity">
+                                <span class="production__quantity-value">
+                                    300 шт в день
+                                </span>
+                            </div>
+                        </li>
+                        <li class="production__item">
+                            <div class="production__name">
+                                товарный бетон<br>
+                                различных марок
+                            </div>
+
+                            <div class="production__quantity">
+                                <span class="production__quantity-value">
+                                    2500 м3 в сутки
+                                </span>
+                            </div>
+                        </li>
+                        <li class="production__item">
+                            <div class="production__name">
+                                дорожные<br> плиты
+                            </div>
+
+                            <div class="production__quantity">
+                                <span class="production__quantity-value">
+                                    Любое количество
+                                </span>
+                            </div>
+                        </li>
+                        <li class="production__item">
+                            <div class="production__name">
+                                блоки<br> фбс
+                            </div>
+
+                            <div class="production__quantity">
+                                <span class="production__quantity-value">
+                                    Любое количество
+                                </span>
+                            </div>
+                        </li>
+                        <li class="production__item">
+                            <div class="production__name">
+                                стендовая формовка<br>
+                                по индивидуальному заказу
+                            </div>
+
+                            <div class="production__quantity">
+                                <span class="production__quantity-value">
+                                    Любое количество
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+			<form action="#" class="form">
+				<div class="form__container">
+					<div class="form__body animation-trigger _animate-on-delete">
+						<div class="form__heading">
+							<h2 class="form__title section-title section-title--no-icon">
+								Получить консультацию
+							</h2>
+							<div class="form__text">
+								<p class="text">
+									Наш менеджер свяжеться с вами и расскажет о
+									всех преимуществах нашей продукции
+								</p>
+							</div>
+						</div>
+
+						<div class="form__inputs">
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input js-input-mask_text" placeholder="Ваше имя" required>
+							</div>
+
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input js-input-mask_phone" placeholder="Номер телефона" required>
+							</div>
+						</div>
+
+						<div class="form__submit-wrapper">
+							<button class="form__submit text-icon-button text-icon-button--bigger">
+								<span class="text-icon-button__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#RArrow"></use>
+									</svg>
+								</span>
+								<span class="text-icon-button__text">
+									Отправить
+								</span>
+							</button>
+
+							<div class="form__agreement">
+								<span>
+									Нажимая на кнопку «Отправить», вы даёте<br>
+									своё согласие на&nbsp;
+								</span>
+								<a href="#">
+									обработку&nbsp;персональных&nbsp;данных
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__image">
+					<img src="./images/form/track.png" alt="">
+				</div>
+			</form>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__heading">
+				<div class="footer__container">
+					<h2 class="footer__title">
+						КОНТАКТЫ
+					</h2>
+
+					<div class="footer__row">
+
+						<div class="footer__contacts">
+							<a href="tel:+7 (965) 581−85-25" class="phone phone--white">
+								<span class="phone__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#phone"></use>
+									</svg>
+								</span>
+								<span class="phone__text">
+									+7 965 581−85-25
+								</span>
+							</a>
+
+							<a href="#" class="address address--white">
+								<span class="address__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#location"></use>
+									</svg>
+								</span>
+
+								<span class="address__text">
+									г.Казань, ул. ул.Магистральная, зд&nbsp;35,&nbsp;помещение&nbsp;2
+								</span>
+							</a>
+
+							<a href="mailto:zakaz@pkbeton.ru" class="mail">
+								zakaz@pkbeton.ru
+							</a>
+
+							<div class="footer__row">
+								<button class="text-icon-button text-icon-button--white">
+									<span class="text-icon-button__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#RArrow"></use>
+										</svg>
+									</span>
+									<span class="text-icon-button__text">
+										Заказать звонок
+									</span>
+								</button>
+
+								<div class="socials">
+									<a href="#" class="socials__btn socials__btn--green round-icon-button round-icon-button--bigger">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#whatsapp"></use>
+										</svg>
+									</a>
+
+									<a href="#" class="socials__btn socials__btn--blue round-icon-button round-icon-button--bigger">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#telegram"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__nav">
+							<div class="footer__catalog catalog-footer">
+								<div class="catalog-footer__title slogan__title">
+									Каталог
+								</div>
+
+								<ul class="catalog-footer__list">
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Сваи
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Плиты перекрытия
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Бетон
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Плиты дорожные
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Колонны
+										</a>
+									</li>
+									<li class="catalog-footer__item">
+										<a href="#" class="catalog-footer__link">
+											Индивидуальные изделия
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__menu menu-footer">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link slogan__title">
+											О компании
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link slogan__title">
+											Сертификаты
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link slogan__title">
+											Вакансии
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link slogan__title">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="footer__slogan slogan">
+							<div class="slogan__title">
+								<span>Доставка</span>
+								<br>
+								<span>без посредников</span>
+							</div>
+
+							<div class="slogan__text">
+								<p>
+									Гарантируем лучшее качество и самые выгодные
+									цены на рынке. Наши мощности позволяют
+									отгружать до 1500 кубов/сутки! Доставим
+									бетон собственным автобетоносмесителем и 
+									автобетононасосом от 18 до 65м!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__basement">
+				<div class="footer__container">
+					<div class="footer__row">
+						<div class="policy">
+							<span class="policy__text">
+								© 2022 «pkbeton.ru»
+							</span>
+							<a href="#" class="policy__link">
+								Политика конфиденциальности
+							</a>
+						</div>
+
+						<a href="" class="developer">
+							<span class="developer__text">
+								Разработано в
+							</span>
+
+							<span class="developer__logo">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#dev"></use>
+								</svg>
+							</span>
+						</a>
+
+						<button class="scroll-up-button">
+							<span class="scroll-up-button__icon">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#RArrow"></use>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	<!-- mobile menu start -->
+	<div class="modal">
+		<div class="modal__content modal__content--mobile _blue-background" data-target="mobile-menu">
+			<button class="modal__close-btn modal-close">
+				<svg class="icon">
+					<use xlink:href="./images/sprite.svg#close"></use>
+				</svg>
+			</button>
+
+			<div class="modal__body">
+				<div class="modal__menu menu-footer menu-footer--mobile-menu">
+					<ul class="menu-footer__list">
+						<li class="menu-footer__item">
+							<a href="#" class="menu-footer__link slogan__title">
+								О компании
+							</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#" class="menu-footer__link slogan__title">
+								Сертификаты
+							</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#" class="menu-footer__link slogan__title">
+								Вакансии
+							</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#" class="menu-footer__link slogan__title">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="modal__catalog catalog-footer catalog-footer--menu">
+					<div class="catalog-footer__title slogan__title">
+						Каталог
+					</div>
+
+					<ul class="catalog-footer__list">
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Сваи
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Плиты перекрытия
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Бетон
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Плиты дорожные
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Колонны
+							</a>
+						</li>
+						<li class="catalog-footer__item">
+							<a href="#" class="catalog-footer__link">
+								Индивидуальные изделия
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<a href="tel:+7 (965) 581−85-25" class="modal__phone phone">
+					<span class="phone__icon">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#phone"></use>
+						</svg>
+					</span>
+					<span class="phone__text">
+						+7 965 581−85-25
+					</span>
+				</a>
+
+				<a href="#" class="modal__address address">
+					<span class="address__icon">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#location"></use>
+						</svg>
+					</span>
+
+					<span class="address__text">
+						г.Казань, ул. ул.Магистральная, зд&nbsp;35,&nbsp;помещение&nbsp;2
+					</span>
+				</a>
+
+				<div class="socials">
+					<a href="#" class="socials__btn socials__btn--green round-icon-button round-icon-button--bigger">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#whatsapp"></use>
+						</svg>
+					</a>
+
+					<a href="#" class="socials__btn socials__btn--blue round-icon-button round-icon-button--bigger">
+						<svg class="icon">
+							<use xlink:href="./images/sprite.svg#telegram"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- mobile menu end -->
+
+	<!-- call back modal start -->
+	<div class="modal">
+		<div class="modal__content" data-target="modal">
+			<button class="modal__close-btn modal-close">
+				<svg class="icon">
+					<use xlink:href="./images/sprite.svg#close"></use>
+				</svg>
+			</button>
+
+			<div class="modal__body">
+				<form action="#" class="modal__form">
+					<div class="form__body">
+						<div class="form__heading">
+							<h3 class="form__title _ta-center _black-color">
+								Заказать звонок
+							</h3>
+
+							<div class="form__text _ta-center">
+								<p class="text">
+									Наш менеджер свяжеться с вами и расскажет о
+									всех преимуществах нашей продукции
+								</p>
+							</div>
+						</div>
+
+						<div class="form__inputs">
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input" placeholder="Ваше имя" required>
+							</div>
+
+							<div class="form__input-wrapper">
+								<input type="text" class="form__input" placeholder="Номер телефона" required>
+							</div>
+						</div>
+
+						<div class="form__submit-wrapper">
+							<button class="form__submit text-icon-button text-icon-button--small">
+								<span class="text-icon-button__icon">
+									<svg class="icon">
+										<use xlink:href="./images/sprite.svg#RArrow"></use>
+									</svg>
+								</span>
+								<span class="text-icon-button__text">
+									Отправить
+								</span>
+							</button>
+
+							<div class="form__agreement">
+								<span>
+									Нажимая на кнопку «Отправить», вы даёте
+									своё согласие на
+								</span>
+								<a href="#">
+									обработку&nbsp;персональных&nbsp;данных
+								</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- call back modal end -->
+</body>
+</html>

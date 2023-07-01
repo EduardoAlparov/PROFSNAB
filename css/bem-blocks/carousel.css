@@ -1,0 +1,125 @@
+.carousel__swiper {
+    padding: 2rem !important;
+    margin: 0 -2rem !important;
+}
+
+.carousel__swiper .swiper-slide {
+    width: 28rem;
+    height: 40rem;
+}
+
+.carousel__swiper .swiper-wrapper {
+    width: max-content;
+    max-width: max-content;
+}
+
+.carousel__title {
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.carousel__control {
+    display: flex;
+    align-items: center;
+    column-gap: 6rem;
+    margin-top: 4rem;
+}
+
+.carousel__navigetion {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.carousel__swiper-button-next,
+.carousel__swiper-button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem !important;
+    height: 6rem !important;
+    background-color: rgba(0, 0, 0, 0.09);
+    border: 0.1rem solid rgba(0, 0, 0, 0.09);
+    border-radius: 100%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel__swiper-button-prev .icon {
+    width: 1.4rem;
+    will-change: transform;
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+}
+
+.carousel__swiper-button-next .icon {
+    width: 1.4rem;
+    will-change: transform;
+    transition: 0.2s ease;
+}
+
+.carousel__control .swiper-pagination {
+    position: static;
+    max-width: 38rem;
+    height: 0.6rem;
+    background: rgba(0, 0, 0, 0.09);
+    border-radius: 0.3rem;
+}
+
+.carousel__control .swiper-pagination .swiper-pagination-progressbar-fill {
+    overflow: hidden;
+    background: var(--color-accent);
+    border-collapse: separate;
+    border-radius: 0.3rem;
+}
+
+.carousel__swiper-button-prev:active .icon {
+    transform: rotate(180deg) scale(1.2);
+}
+
+.carousel__swiper-button-next:active .icon {
+    transform: scale(1.2);
+}
+
+@media (any-hover: hover) {
+    .carousel__swiper-button-prev:hover,
+    .carousel__swiper-button-next:hover {
+        background-color: var(--color-accent);
+    }
+}
+
+@media (max-width : 768px) {
+    .carousel__swiper .swiper-slide {
+        width: 22rem;
+        height: 35rem;
+    }
+
+    .carousel__control {
+        column-gap: unset;
+        margin-top: 2rem;
+    }
+
+    .carousel__navigetion {
+        column-gap: 1rem;
+    }
+
+    .carousel__swiper-button-next,
+    .carousel__swiper-button-prev {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+
+    .carousel__swiper-button-prev .icon {
+        width: 1rem;
+    }
+
+    .carousel__swiper-button-next .icon {
+        width: 1rem;
+    }
+
+    .carousel__control .swiper-pagination {
+        position: absolute;
+        max-width: unset;
+        height: 0.4rem;
+    }
+}

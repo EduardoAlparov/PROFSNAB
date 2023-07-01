@@ -1,0 +1,102 @@
+.round-icon-button {
+    position: relative;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.round-icon-button::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #18A5D7 0%, #9C31FE 100%);
+    border-radius: 100%;
+    transform: scale(0);
+    transition: transform 0.3s ease-out;
+    content: "";
+}
+
+.round-icon-button .icon{
+    position: relative;
+    z-index: 5;
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: var(--color-white);
+    transition: 0.3s ease;
+}
+
+.round-icon-button--blue {
+    background-color: var(--color-accent);
+}
+
+.round-icon-button--bigger {
+    width: 4rem;
+    height: 4rem;
+}
+
+.round-icon-button--bigger .icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.round-icon-button--product {
+    width: 8rem;
+    height: 8rem;
+}
+
+.round-icon-button--product .icon{
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-white);
+    transition: 0.3s ease;
+}
+
+@media (any-hover: hover) {
+
+    .round-icon-button:hover {
+        border-width: 0;
+        filter: drop-shadow(10px 30px 40px rgba(0, 45, 206, 0.25));
+    }
+
+    .round-icon-button:hover::before {
+        transform: scale(1);
+    }
+}
+
+@media (max-width : 1199px) {
+    .round-icon-button--product {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .round-icon-button--product .icon{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+}
+
+
+@media (max-width : 576px) {
+    .round-icon-button--product {
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
+    .round-icon-button--product .icon{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+}

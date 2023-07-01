@@ -1,0 +1,38 @@
+.tag {
+    display: block;
+    min-height: 2.5rem;
+    cursor: pointer;
+}
+
+.tag__span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+    color: var(--color-black);
+    background-color: transparent;
+    border: 0.1rem solid rgba(0, 0, 0, 0.09);
+    border-radius: 2.5rem;
+}
+
+.tag__input:checked ~ .tag__span {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-color: transparent;
+}
+
+@media (any-hover: hover) {
+    .tag__span:hover {
+        background-image: linear-gradient(180deg, #18A5D7 0%, #9C31FE 100%);
+        color: var(--color-white);
+    }
+
+    .tag__input:checked ~ .tag__span:hover {
+        background-image: linear-gradient(180deg, transparent 0%, transparent 100%);
+        background-color: var(--color-accent);
+    }
+}

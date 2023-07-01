@@ -1,0 +1,134 @@
+.category {
+    position: relative;
+}
+
+.category__titles {
+    padding-bottom: 3rem;
+}
+
+.category__titles .text-icon-button {
+    margin-top: 2rem;
+}
+
+.category__title {
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.category__title--big {
+    margin-bottom: 4rem;
+}
+
+.category__text {
+    max-width: 80rem;
+}
+
+.category__text--vacancy {
+    max-width: 58rem;
+}
+
+.category__heading {
+    padding-top: 14.4rem;
+    padding-bottom: 1rem;
+}
+
+.category__heading--padding {
+    padding-bottom: 11.4rem;
+}
+
+.category__heading .category__container {
+    position: relative;
+}
+
+.category__shift-wrapper {
+    background-color: var(--color-white);
+}
+
+.category__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    transform: translateY(-10.4rem);
+}
+
+.category__item {
+    margin-bottom: 2rem;
+    flex-shrink: 0;
+}
+
+.category__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 43rem;
+    height: 30rem;
+}
+
+.category__image > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.category__text--with-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: unset;
+}
+
+.category__text--with-buttons p {
+    max-width: 80rem;
+}
+
+@media (max-width : 768px) {
+    .category__list {
+        transform: translateY(-2rem);
+    }
+
+    .category__heading {
+        padding-top: 8.4rem;
+        padding-bottom: 1rem;
+    }
+
+    .category__text--with-buttons {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .category__text--with-buttons p {
+        max-width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .category__image {
+        height: 180%;
+    }
+
+    .category__list {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .category__item--filter {
+        width: 100%;
+    }
+}
+
+@media (max-width : 680px) {
+    .category__list {
+        gap: 4rem;
+    }
+}
+
+@media (max-width : 576px) {
+    .category__image {
+        display: none;
+    }
+}
+
+@media (max-width : 510px) {
+    .category__list {
+        gap: 4rem;
+    }
+}
